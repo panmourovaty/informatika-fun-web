@@ -215,6 +215,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: "Inter";
   overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
 }
 
 hr {
@@ -13986,6 +13987,7 @@ fieldset:disabled .btn {
 .maincontentrow {
   margin-top: 20px;
   min-width: 80vw;
+  min-height: 98vh;
 }
 
 @media (min-width: 1024px) {

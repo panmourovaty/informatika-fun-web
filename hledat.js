@@ -22,7 +22,6 @@ function searchData() {
     );
 
     if (filteredResults.length > 0) {
-        resultsDiv.innerHTML = '<h3>Found Results:</h3>';
         filteredResults.forEach(item => {
             resultsDiv.innerHTML += `<div class="col-4 p-3 h-100"><a href="${item.url}" class="text-decoration-none text-bg-dark"><div class="bg-frostedglass bg-frostedglass-interactive p-4 text-center text-decoration-none"><h3>${item.name}</h3><br><img src="${item.img}" height="80" class="p-2"/><p>${item.desc}</p></div></a></div>`;
         });

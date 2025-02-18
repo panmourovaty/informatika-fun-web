@@ -14023,6 +14023,6 @@ fieldset:disabled .btn {
 }
 
 .input-frostedglass:focus {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
 }

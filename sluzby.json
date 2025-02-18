@@ -1,27 +1,27 @@
 [
     {
-        "name": "John Doe",
-        "age": 30,
-        "location": "New York"
+        "name": "Nebula",
+        "img": "ikony/nebula.svg",
+        "desc": "Flexibilní a výkonný cloudový nástroj pro virtualizaci."
     },
     {
-        "name": "Jane Smith",
-        "age": 25,
-        "location": "Los Angeles"
+        "name": "GNS3",
+        "img": "ikony/gns3.svg",
+        "desc": "Začněte s GNS3 a vytvořte si vlastní virtuální síť – ideální pro simulace a učení!"
     },
     {
-        "name": "Alice Johnson",
-        "age": 35,
-        "location": "Chicago"
+        "name": "Wiki",
+        "img": "ikony/wiki.svg",
+        "desc": "Rychlý přístup k návodům, informacím a řešením pro všechny vaše otázky."
     },
     {
-        "name": "Bob Brown",
-        "age": 28,
-        "location": "Miami"
+        "name": "Letocraft",
+        "img": "ikony/minecraft.svg",
+        "desc": "Připojte se k našemu Minecraft serveru – tvořte, objevujte a bavte se s přáteli ve fantastickém světě!"
     },
     {
-        "name": "Charlie Davis",
-        "age": 40,
-        "location": "San Francisco"
+        "name": "Moodle",
+        "img": "ikony/moodle.svg",
+        "desc": "Využijte Moodle pro efektivní e-learning – snadno se vzdělávejte a sledujte svůj pokrok!"
     }
 ]

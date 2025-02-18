@@ -26,9 +26,9 @@ function searchData() {
 
     if (filteredResults.length > 0) {
         filteredResults.forEach(item => {
-            resultsDiv.innerHTML += `<div class="col-2 p-3 h-100"><div class="bg-frostedglass p-4 text-center"><p>${item.name}</p></div></div>`; // Change 'name' to the appropriate key
+            resultsDiv.innerHTML += `<div class="col-4 p-3 h-100"><div class="bg-frostedglass p-4 text-center"><b>${item.name}</b><img src="${item.img}"/><p>${item.desc}</p></div></div>`; // Change 'name' to the appropriate key
         });
     } else {
-        resultsDiv.innerHTML = '<div class="col-2 p-3 h-100"><div class="bg-frostedglass p-4 text-center"><p>Nic jsme nenašli 😔</p></div></div>';
+        resultsDiv.innerHTML = '<div class="col-4 p-3"><div class="bg-frostedglass p-4 text-center"><p>Nic jsme nenašli 😔</p></div></div>';
     }
 }

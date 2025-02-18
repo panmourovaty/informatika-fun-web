@@ -13940,14 +13940,19 @@ fieldset:disabled .btn {
 }
 
 .bg-frostedglass {
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
   backdrop-filter: blur(40px);
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
   border-radius: 2rem;
 }
 
-.bg-frostedglass:hover {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+.bg-frostedglass-interactive:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 0.5px inset;
 }
 
 .sidebar-item {

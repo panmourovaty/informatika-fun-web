@@ -20,14 +20,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/htmx.min.js"
         integrity="sha512-2kIcAizYXhIn8TzUvqzEDZNuDZ+aW7yE/+f1HJHXFjQcGNfv1kqzJSTBRBSlOgp6B/KZsz1K0a3ZTqP9dnxioQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/ext/preload.min.js"
-        integrity="sha512-d3zMzWqIGmnfg6+NJVudCD2+KVFXe844uBD0k/PId9U6Zu7tz9wxW49iQO/d0IugRE+Daq+DotoLHOIFugSKCg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="skript.js" defer></script>
     <script src="hledat.js" defer></script>
 </head>
 
-<body hx-ext="preload">
+<body>
     <nav class="navbar">
         <div class="container-fluid d-flex justify-content-end">
             <button class="btn bg-frostedglass text-bg-dark" onclick="toggleSidebar()">☰</button>
@@ -36,19 +33,19 @@
 
     <div class="d-flex justify-content-center">
         <div class="offcanvas show d-flex justify-content-center bg-transparent" id="sidebar">
-            <div class="bg-frostedglass h-100 text-bg-dark" preload="mouseover">
+            <div class="bg-frostedglass h-100 text-bg-dark">
                 <div>
-                    <a href="/" class="text-bg-dark text-decoration-none">
+                    <a hx-get="/main.html" hx-target="#maincontentrow" class="text-bg-dark text-decoration-none">
                         <h5 class="m-4 text-center">Informatika.fun</h5>
                     </a>
                 </div>
                 <div class="offcanvas-body d-flex justify-content-center">
                     <div>
-                        <a href="/" class="text-white d-block mb-2 sidebar-item my-3 p-3 sidebar-item-selected"><i
+                        <a hx-get="/main.html" hx-target="#maincontentrow" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
                                 class="fa-solid fa-house mx-2"></i>Domů</a>
-                        <a href="/sluzby" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                        <a hx-get="/sluzby.html" hx-target="#maincontentrow" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
                                 class="fa-solid fa-gear mx-2"></i>Služby</a>
-                        <a href="https://wiki.informatika.fun" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                        <a href="https://wiki.informatika.fun" target="_blank" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
                                 class="fa-solid fa-book mx-2"></i>Wiki</a>
                         <a href="https://letocraft.cz" target="_blank"
                             class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
@@ -60,28 +57,7 @@
             </div>
         </div>
 
-        <div class="row maincontentrow g-3 py-3 ps-2 text-bg-dark">
-            <div>
-                <div class="py-3">
-                    <div class="bg-frostedglass p-4 h-100">
-                        <div class="text-center d-flex flex-column justify-content-center">
-                            <h1>Vítejte na stránkách <b>Informatika.fun</b>!</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-3">
-                    <div class="bg-frostedglass p-4">
-                        <div class="search-container">
-                            <input type="text" class="form-control search-input input-frostedglass"
-                                placeholder="Hledat..." id="searchInput" oninput="searchData()">
-                            <i class="fas fa-search search-icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="results" style="max-width: 75vw;" preload="mouseover">
-
-                </div>
-            </div>
+        <div class="row maincontentrow g-3 py-3 ps-2 text-bg-dark" id="maincontentrow">
         </div>
     </div>
 </body>

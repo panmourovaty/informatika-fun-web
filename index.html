@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+        integrity="sha512-DzC7h7+bDlpXPDQsX/0fShhf1dLxXlHuhPBkBo/5wJWRoTU6YL7moeiNoej6q3wh5ti78C57Tu1JwTNlcgHSjg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/htmx.min.js"
+        integrity="sha512-2kIcAizYXhIn8TzUvqzEDZNuDZ+aW7yE/+f1HJHXFjQcGNfv1kqzJSTBRBSlOgp6B/KZsz1K0a3ZTqP9dnxioQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/ext/preload.min.js"
+        integrity="sha512-d3zMzWqIGmnfg6+NJVudCD2+KVFXe844uBD0k/PId9U6Zu7tz9wxW49iQO/d0IugRE+Daq+DotoLHOIFugSKCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="skript.js" defer></script>
+    <script src="hledat.js" defer></script>
+</head>
+
+<body hx-ext="preload">
+    <nav class="navbar">
+        <div class="container-fluid d-flex justify-content-end">
+            <button class="btn bg-frostedglass text-bg-dark" onclick="toggleSidebar()">☰</button>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+        <div class="offcanvas show d-flex justify-content-center bg-transparent" id="sidebar">
+            <div class="bg-frostedglass h-100 text-bg-dark">
+                <div>
+                    <h5 class="m-4 text-center">Informatika.fun</h5>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center">
+                    <div>
+                        <a href="#" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                                class="fa-solid fa-house mx-2"></i>Domů</a>
+                        <a href="#" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                                class="fa-solid fa-gear mx-2"></i>Služby</a>
+                        <a href="#" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                                class="fa-solid fa-book mx-2"></i>Wiki</a>
+                        <a href="https://letocraft.cz" target="_blank"
+                            class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                                class="fa-solid fa-cubes mx-2"></i>Letocraft&nbsp;<i
+                                class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a>
+                        <a href="#" class="text-white d-block mb-2 sidebar-item my-3 p-3"><i
+                                class="fa-solid fa-question mx-2"></i>O projektu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row maincontentrow g-3 py-3 ps-2 text-bg-dark">
+            <div class="col-lg-12 col-12 p-3">
+                <div class="bg-frostedglass p-4 h-100">
+                    <div class="text-center d-flex flex-column justify-content-center">
+                        <h1>Vítejte na stránkách <b>Informatika.fun</b>!</h1>
+                        <div class="search-container">
+                            <input type="text" class="form-control search-input input-frostedglass" placeholder="Hledat..." id="searchInput" oninput="hledatsluzby()">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                        <div id="results"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 p-3">
+                <div class="bg-frostedglass p-4 h-100">
+                    1 of 2
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 p-3">
+                <div class="bg-frostedglass p-4 h-100">
+                    1 of 2
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

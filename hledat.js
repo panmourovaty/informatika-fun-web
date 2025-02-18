@@ -1,4 +1,4 @@
-let jsonData = []; 
+let jsonData = [];
 
 window.onload = async function() {
     const url = `sluzby.json`;
@@ -17,17 +17,14 @@ function searchData() {
 
     resultsDiv.innerHTML = '';
 
-    if (inputText.trim() === '') {
-        return;
-    }
-
-    const filteredResults = jsonData.filter(item => {
-        return item.name.toLowerCase().includes(inputText.toLowerCase());
-    });
+    const filteredResults = jsonData.filter(item => 
+        inputText === '*' || item.name.toLowerCase().includes(inputText.toLowerCase())
+    );
 
     if (filteredResults.length > 0) {
+        resultsDiv.innerHTML = '<h3>Found Results:</h3>';
         filteredResults.forEach(item => {
-            resultsDiv.innerHTML += `<div class="col-4 p-3 h-100"><a href="${item.url}" class="text-decoration-none text-bg-dark"><div class="bg-frostedglass bg-frostedglass-interactive p-4 text-center text-decoration-none"><h3>${item.name}</h3><br><img src="${item.img}" height="80" class="p-2"/><p>${item.desc}</p></div></a></div>`; // Change 'name' to the appropriate key
+            resultsDiv.innerHTML += `<div class="col-4 p-3 h-100"><a href="${item.url}" class="text-decoration-none text-bg-dark"><div class="bg-frostedglass bg-frostedglass-interactive p-4 text-center text-decoration-none"><h3>${item.name}</h3><br><img src="${item.img}" height="80" class="p-2"/><p>${item.desc}</p></div></a></div>`;
         });
     } else {
         resultsDiv.innerHTML = '<div class="col-4 p-3"><div class="bg-frostedglass p-4 text-center"><p>Nic jsme nenašli 😔</p></div></div>';

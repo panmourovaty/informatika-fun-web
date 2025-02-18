@@ -25,6 +25,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="skript.js" defer></script>
     <script src="hledat.js" defer></script>
+    <script>
+        let jsonData = [];
+
+        window.onload = async function () {
+            const url = `sluzby.json`;
+            try {
+                const response = await fetch(url);
+                jsonData = await response.json();
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('results').innerHTML = '<p>Error fetching data</p>';
+            }
+            jsonData.forEach(item => {
+                resultsDiv.innerHTML += `<div class="col-4 p-3 h-100"><a href="${item.url}" class="text-decoration-none text-bg-dark"><div class="bg-frostedglass bg-frostedglass-interactive p-4 text-center text-decoration-none"><h3>${item.name}</h3><br><img src="${item.img}" height="80" class="p-2"/><p>${item.desc}</p></div></a></div>`;
+            });
+        };
+    </script>
 </head>
 
 <body hx-ext="preload">
@@ -62,18 +79,7 @@
 
         <div class="row maincontentrow g-3 py-3 ps-2 text-bg-dark">
             <div>
-                <div class="py-3">
-                    <div class="bg-frostedglass p-4">
-                        <div class="search-container">
-                            <input type="text" class="form-control search-input input-frostedglass"
-                                placeholder="Hledat..." id="searchInput" oninput="searchData()" value="*">
-                            <i class="fas fa-search search-icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="results" style="max-width: 75vw;" preload="mouseover">
-
-                </div>
+                <div class="row" id="results" style="max-width: 75vw;" preload="mouseover"></div>
             </div>
         </div>
     </div>

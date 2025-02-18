@@ -24,7 +24,7 @@
     <script src="hledat.js" defer></script>
 </head>
 
-<body hx-get="/main.html" hx-target="#maincontentrow" hx-trigger="onload">
+<body>
     <nav class="navbar">
         <div class="container-fluid d-flex justify-content-end">
             <button class="btn bg-frostedglass text-bg-dark" onclick="toggleSidebar()">☰</button>
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="row maincontentrow g-3 py-3 ps-2 text-bg-dark" id="maincontentrow">
+        <div class="row maincontentrow g-3 py-3 ps-2 text-bg-dark" id="maincontentrow" hx-get="/main.html" hx-trigger="onload">
         </div>
     </div>
 </body>

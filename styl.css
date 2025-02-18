@@ -13951,8 +13951,9 @@ fieldset:disabled .btn {
 }
 
 .bg-frostedglass-interactive:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 0.5px inset;
+  backdrop-filter: blur(30px);
 }
 
 .sidebar-item {

@@ -2,26 +2,31 @@
     {
         "name": "Nebula",
         "img": "ikony/nebula.svg",
+        "url": "https://nebula.informatika.fun",
         "desc": "Flexibilní a výkonný cloudový nástroj pro virtualizaci."
     },
     {
         "name": "GNS3",
         "img": "ikony/gns3.svg",
+        "url": "https://network.informatika.fun",
         "desc": "Začněte s GNS3 a vytvořte si vlastní virtuální síť – ideální pro simulace a učení!"
     },
     {
         "name": "Wiki",
         "img": "ikony/wiki.svg",
+        "url": "https://wiki.informatika.fun",
         "desc": "Rychlý přístup k návodům, informacím a řešením pro všechny vaše otázky."
     },
     {
         "name": "Letocraft",
         "img": "ikony/minecraft.svg",
+        "url": "https://letocraft.cz",
         "desc": "Připojte se k našemu Minecraft serveru – tvořte, objevujte a bavte se s přáteli ve fantastickém světě!"
     },
     {
         "name": "Moodle",
         "img": "ikony/moodle.svg",
+        "url": "https://můdl.informatika.fun",
         "desc": "Využijte Moodle pro efektivní e-learning – snadno se vzdělávejte a sledujte svůj pokrok!"
     }
 ]

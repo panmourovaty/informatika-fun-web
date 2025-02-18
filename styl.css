@@ -207,7 +207,10 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
-  background-image: url("fotka.jpg");
+  background-image: url("fotka.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: "Inter";

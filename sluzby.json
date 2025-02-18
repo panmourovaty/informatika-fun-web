@@ -28,5 +28,11 @@
         "img": "ikony/moodle.svg",
         "url": "https://můdl.informatika.fun",
         "desc": "Využijte Moodle pro efektivní e-learning – snadno se vzdělávejte a sledujte svůj pokrok!"
+    },
+    {
+        "name": "Webhosting",
+        "img": "ikony/weby.svg",
+        "url": "https://weby.informatika.fun",
+        "desc": "Verfektní prostředí pro vaše první webové projekty – publikujte a učte se!"
     }
 ]

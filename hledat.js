@@ -15,8 +15,9 @@ function searchData() {
     const inputText = document.getElementById('searchInput').value;
     const resultsDiv = document.getElementById('results');
 
+    resultsDiv.innerHTML = '';
+
     if (inputText.trim() === '') {
-        resultsDiv.innerHTML = '';
         return;
     }
 

@@ -13975,6 +13975,11 @@ fieldset:disabled .btn {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
 }
 
+.sidebar-item-selected {
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset !important;
+}
+
 .maincontentrow {
   margin-top: 20px;
   min-width: 80vw;

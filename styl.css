@@ -14002,9 +14002,9 @@ fieldset:disabled .btn {
 
 .maincontentrow {
   margin-top: 20px;
-  min-width: 70vw;
-  max-width: 78vw;
+  max-width: 80vw;
   min-height: 98vh;
+  padding-left: 11vw;
 }
 
 @media (min-width: 1024px) {

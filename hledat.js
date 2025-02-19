@@ -28,4 +28,5 @@ function searchData() {
     } else {
         resultsDiv.innerHTML = '<div class="col-4 col-md-12 p-3"><div class="bg-frostedglass p-4 text-center"><p>Nic jsme nenašli 😔</p></div></div>';
     }
+    document.querySelector('.resultrow').classList.add('active');
 }

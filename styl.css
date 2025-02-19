@@ -14071,3 +14071,8 @@ fieldset:disabled .btn {
   opacity: 1;
   transform: translateY(0);
 }
+
+.resultrow.active {
+  opacity: 1;
+  transform: translateY(0);
+}

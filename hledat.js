@@ -5,6 +5,7 @@ window.onload = async function() {
     try {
         const response = await fetch(url);
         jsonData = await response.json();
+        searchData();
     } catch (error) {
         console.error('Error fetching data:', error);
         document.getElementById('results').innerHTML = '<p>Error fetching data</p>';

@@ -13956,44 +13956,24 @@ fieldset:disabled .btn {
   backdrop-filter: blur(25px);
 }
 
-@media (max-width: 1023px) {
-  .sidebar {
-      left: -250px;
-  }
+#sidebar {
+  position: fixed;
+  left: -250px; /* Hide sidebar by default */
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  transition: left 0.3s ease-in-out;
+}
 
-  .sidebar.open {
+#sidebar.open {
+  left: 0; /* Show sidebar when toggled */
+}
+
+/* Ensure sidebar stays visible on large screens */
+@media (min-width: 1024px) {
+  #sidebar {
       left: 0;
   }
-}
-
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background: #333;
-  color: white;
-  padding: 20px;
-  position: fixed;
-  left: -250px;
-  top: 0;
-  transition: 0.3s;
-}
-
-.sidebar.open {
-  left: 0;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 15px 0;
-}
-
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
 }
 
 .sidebar-item {

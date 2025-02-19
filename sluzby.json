@@ -34,5 +34,11 @@
         "img": "ikony/weby.svg",
         "url": "https://weby.informatika.fun",
         "desc": "Perfektní prostředí pro vaše první webové projekty – publikujte a učte se!"
+    },
+    {
+        "name": "Mail",
+        "img": "ikony/mail.svg",
+        "url": "https://webmail.informatika.fun",
+        "desc": "Komunikujte oficiálně! E-mail pro všechny vaše vzdělávací potřeby."
     }
 ]

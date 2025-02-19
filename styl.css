@@ -877,6 +877,9 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .row>* {
@@ -14030,4 +14033,41 @@ fieldset:disabled .btn {
 .input-frostedglass:focus {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+}
+
+.container .row:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.container .row:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.container .row:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.container .row:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+.container .row:nth-child(5) {
+  transition-delay: 0.8s;
+}
+
+.container .row:nth-child(6) {
+  transition-delay: 1s;
+}
+
+.container .row:nth-child(7) {
+  transition-delay: 1.2s;
+}
+
+.container .row:nth-child(8) {
+  transition-delay: 1.4s;
+}
+
+.row.active {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -13982,7 +13982,8 @@ fieldset:disabled .btn {
 
 .maincontentrow {
   margin-top: 20px;
-  min-width: 80vw;
+  min-width: 70vw;
+  max-width: 78vw;
   min-height: 98vh;
 }
 

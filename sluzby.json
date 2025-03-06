@@ -40,5 +40,11 @@
         "img": "ikony/mail.svg",
         "url": "https://webmail.informatika.fun",
         "desc": "Komunikujte oficiálně! E-mail pro všechny vaše vzdělávací potřeby."
+    },
+        {
+        "name": "Videa z kroužků",
+        "img": "ikony/youtube.svg",
+        "url": "https://www.youtube.com/playlist?list=PLeKgd0rQkH-COoLQ-MwXQF9P6toqD_jx6",
+        "desc": "YouTube playlist obsahující videa z kroužků."
     }
 ]

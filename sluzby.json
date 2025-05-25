@@ -1,50 +1,56 @@
 [
     {
-        "name": "Nebula",
-        "img": "ikony/nebula.svg",
-        "url": "https://nebula.informatika.fun",
-        "desc": "Flexibilní a výkonný cloudový nástroj pro virtualizaci."
+        "name": "Cloud",
+        "img": "ikony/nextcloud.svg",
+        "url": "https://cloud.hejlhome.cz",
+        "desc": "Hostování a správa dokumentů či jiných souborů."
     },
     {
-        "name": "GNS3",
-        "img": "ikony/gns3.svg",
-        "url": "https://network.informatika.fun",
-        "desc": "Začněte s GNS3 a vytvořte si vlastní virtuální síť – ideální pro simulace a učení!"
+        "name": "Home",
+        "img": "ikony/homeassistant.svg",
+        "url": "https://home.hejlhome.cz",
+        "desc": "Ovládání a monitorování domácnosti přes Homeassistant."
     },
     {
-        "name": "Wiki",
-        "img": "ikony/wiki.svg",
-        "url": "https://wiki.informatika.fun",
-        "desc": "Rychlý přístup k návodům, informacím a řešením pro všechny vaše otázky."
+        "name": "Vault",
+        "img": "ikony/bitwarden.svg",
+        "url": "https://vault.hejlhome.cz",
+        "desc": "Správa hesel."
     },
     {
-        "name": "Letocraft",
-        "img": "ikony/minecraft.svg",
-        "url": "https://letocraft.cz",
-        "desc": "Připojte se k našemu Minecraft serveru – tvořte, objevujte a bavte se s přáteli ve fantastickém světě!"
+        "name": "VDI",
+        "img": "ikony/proxmox.svg",
+        "url": "https://vdi.hejlhome.cz",
+        "desc": "Vzdálené plochy."
     },
     {
-        "name": "Moodle",
-        "img": "ikony/moodle.svg",
-        "url": "https://můdl.informatika.fun",
-        "desc": "Využijte Moodle pro efektivní e-learning – snadno se vzdělávejte a sledujte svůj pokrok!"
+        "name": "Unifi",
+        "img": "ikony/unifi.svg",
+        "url": "https://unifi.hejlhome.cz",
+        "desc": "Správa Wi-Fi"
     },
     {
-        "name": "Webhosting",
+        "name": "ID",
         "img": "ikony/weby.svg",
-        "url": "https://weby.informatika.fun",
-        "desc": "Perfektní prostředí pro vaše první webové projekty – publikujte a učte se!"
+        "url": "https://id.hejlhome.cz",
+        "desc": "Správa účtů"
     },
     {
-        "name": "Mail",
-        "img": "ikony/mail.svg",
-        "url": "https://webmail.informatika.fun",
-        "desc": "Komunikujte oficiálně! E-mail pro všechny vaše vzdělávací potřeby."
+        "name": "Správce Stahování",
+        "img": "ikony/jellyseerr.svg",
+        "url": "https://stahovani.hejlhome.cz",
+        "desc": "Správce stahování, stačí si zažádat a dostanete!"
     },
-        {
-        "name": "Videa z kroužků",
-        "img": "ikony/youtube.svg",
-        "url": "https://www.youtube.com/playlist?list=PLeKgd0rQkH-COoLQ-MwXQF9P6toqD_jx6",
-        "desc": "YouTube playlist obsahující videa z kroužků."
+    {
+        "name": "Filmy",
+        "img": "ikony/jellyfin.svg",
+        "url": "https://filmy.hejlhome.cz",
+        "desc": "Přehrávání Filmů, Seriálů a Hudby"
+    },
+    {
+        "name": "Main server",
+        "img": "ikony/proxmox.svg",
+        "url": "https://pve.hejlhome.cz",
+        "desc": "Hlavní server"
     }
 ]
